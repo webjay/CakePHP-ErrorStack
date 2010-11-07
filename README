@@ -1,0 +1,10 @@
+ErrorStack: http://www.errorstack.com/
+
+To install do this:
+git submodule add git://github.com/webjay/CakePHP-ErrorStack.git plugins/errorstack
+
+In app/config/bootstrap.php insert:
+CakeLog::config('Errorstack', array(
+	'engine' => 'Errorstack.Postlog',
+	'key' => 'your key'
+));
